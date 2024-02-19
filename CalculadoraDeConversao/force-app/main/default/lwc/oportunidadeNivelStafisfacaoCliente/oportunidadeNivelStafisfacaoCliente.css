@@ -1,0 +1,50 @@
+.container {
+    padding: 10px;
+}
+
+.card {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.0rem; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+
+.indicador-nivel-satisfacao {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.termometro-barra {
+    width: 100%; 
+    height: 30px;
+    background-color: #ccc;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.termometro-preenchido {
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+.nova-barra {
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.rotulo-satisfacao {
+    margin-top: 20px; 
+    font-weight: bold; 
+    font-size: 16px; 
+}

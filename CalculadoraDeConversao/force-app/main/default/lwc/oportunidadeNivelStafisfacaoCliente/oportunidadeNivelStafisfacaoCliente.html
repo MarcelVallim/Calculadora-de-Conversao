@@ -1,0 +1,17 @@
+<template>
+    <div class="container">
+        <lightning-card class="card">
+            <h2 class="card-title">Nível de Satisfação do Cliente</h2>
+            <div class="indicador-nivel-satisfacao">
+                <div class="termometro" onclick={handleTermometroClick}>
+                    <div class="termometro-barra">
+                        <div class="termometro-preenchido" style={larguraTermometro}></div>
+                        <div class="indicador-estagio" style={posicaoIndicador}></div>
+                        <div if:true={mostrarBarra} class="nova-barra" style={larguraNovaBarra}></div>
+                    </div>
+                </div>
+                <div class="rotulo-satisfacao">{rotuloSatisfacao}</div>
+            </div>
+        </lightning-card>
+    </div>
+</template>
